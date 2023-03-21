@@ -1,0 +1,144 @@
+test:
+  workers:
+    number: 1000
+  rounds:
+    # - label: Create a car. (100)
+    #   txNumber: 10000
+    #   rateControl:
+    #     type: fixed-rate
+    #     opts:
+    #       tps: 500
+    #   workload:
+    #     module: benchmarks/samples/fabric/fabcar/createCar.js
+
+    - label: Create a car. (200)
+      txNumber: 2000
+      rateControl:
+        type: fixed-rate
+        opts:
+          tps: 200
+      workload:
+        module: benchmarks/samples/fabric/fabcar/createCar.js
+
+    # - label: Create a car (300).
+    #   txNumber: 2000
+    #   rateControl:
+    #     type: fixed-rate
+    #     opts:
+    #       tps: 300
+    #   workload:
+    #     module: benchmarks/samples/fabric/fabcar/createCar.js
+
+    # - label: Create a car. (400)
+    #   txNumber: 2000
+    #   rateControl:
+    #     type: fixed-rate
+    #     opts:
+    #       tps: 400
+    #   workload:
+    #     module: benchmarks/samples/fabric/fabcar/createCar.js
+
+    # - label: Create a car. (500)
+    #   txNumber: 2000
+    #   rateControl:
+    #     type: fixed-rate
+    #     opts:
+    #       tps: 500
+    #   workload:
+    #     module: benchmarks/samples/fabric/fabcar/createCar.js
+
+    # - label: Create a car. (600)
+    #   txNumber: 2000
+    #   rateControl:
+    #     type: fixed-rate
+    #     opts:
+    #       tps: 600
+    #   workload:
+    #     module: benchmarks/samples/fabric/fabcar/createCar.js
+
+    # - label: Create a car. (700)
+    #   txNumber: 2000
+    #   rateControl:
+    #     type: fixed-rate
+    #     opts:
+    #       tps: 700
+    #   workload:
+    #     module: benchmarks/samples/fabric/fabcar/createCar.js
+
+    # - label: Create a car. (800)
+    #   txNumber: 2000
+    #   rateControl:
+    #     type: fixed-rate
+    #     opts:
+    #       tps: 800
+    #   workload:
+    #     module: benchmarks/samples/fabric/fabcar/createCar.js
+
+    # - label: Create a car. (900)
+    #   txNumber: 2000
+    #   rateControl:
+    #     type: fixed-rate
+    #     opts:
+    #       tps: 900
+    #   workload:
+    #     module: benchmarks/samples/fabric/fabcar/createCar.js
+
+    # - label: Create a car. (1000)
+    #   txNumber: 2000
+    #   rateControl:
+    #     type: fixed-rate
+    #     opts:
+    #       tps: 1000
+    #   workload:
+    #     module: benchmarks/samples/fabric/fabcar/createCar.js
+
+    # - label: Create a car. (1500)
+    #   txNumber: 2000
+    #   rateControl:
+    #     type: fixed-rate
+    #     opts:
+    #       tps: 1500
+    #   workload:
+    #     module: benchmarks/samples/fabric/fabcar/createCar.js
+
+    # - label: Create a car. (2000)
+    #   txNumber: 2000
+    #   rateControl:
+    #     type: fixed-rate
+    #     opts:
+    #       tps: 2000
+    #   workload:
+    #     module: benchmarks/samples/fabric/fabcar/createCar.js
+
+    # - label: Change car owner. (500)
+    #   txDuration: 30
+    #   rateControl:
+    #     type: fixed-rate
+    #     opts:
+    #       tps: 500
+    #   workload:
+    #     module: benchmarks/samples/fabric/fabcar/changeCarOwner.js
+    #     arguments:
+    #       assets: 500
+    # - label: Query all cars.
+    #   txDuration: 30
+    #   rateControl:
+    #     type: fixed-rate
+    #     opts:
+    #       tps: 100
+    #   workload:
+    #     module: benchmarks/samples/fabric/fabcar/queryAllCars.js
+    #     arguments:
+    #       assets: 500
+    #       startKey: "1"
+    #       endKey: "50"
+    # - label: Query a car.
+    #   txDuration: 30
+    #   rateControl:
+    #     type: fixed-rate
+    #     opts:
+    #       tps: 100
+    #   workload:
+    #     module: benchmarks/samples/fabric/fabcar/queryCar.js
+    #     arguments:
+    #       assets: 500

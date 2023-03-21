@@ -1,0 +1,281 @@
+test:
+  workers:
+    number: 5
+  rounds:
+    # 100
+    - label: Create a Asset (100)
+      txNumber: 3000
+      rateControl:
+        type: fixed-rate
+        opts:
+          tps: 100
+      workload:
+        module: benchmarks/samples/storage/create.js
+
+    - label: Delete a Asset (100)
+      txNumber: 3000
+      rateControl:
+        type: fixed-rate
+        opts:
+          tps: 100
+      workload:
+        module: benchmarks/samples/storage/delete.js
+
+    - label: Query a Asset (100)
+      txNumber: 3000
+      rateControl:
+        type: fixed-rate
+        opts:
+          tps: 100
+      workload:
+        module: benchmarks/samples/storage/query.js
+
+    - label: Update a Asset (100)
+      txNumber: 3000
+      rateControl:
+        type: fixed-rate
+        opts:
+          tps: 100
+      workload:
+        module: benchmarks/samples/storage/update.js
+
+    # # 300
+    - label: Create a Asset (300)
+      txNumber: 3000
+      rateControl:
+        type: fixed-rate
+        opts:
+          tps: 300
+      workload:
+        module: benchmarks/samples/storage/create.js
+
+    - label: Delete a Asset (300)
+      txNumber: 3000
+      rateControl:
+        type: fixed-rate
+        opts:
+          tps: 300
+      workload:
+        module: benchmarks/samples/storage/delete.js
+
+    - label: Update a Asset (300)
+      txNumber: 3000
+      rateControl:
+        type: fixed-rate
+        opts:
+          tps: 300
+      workload:
+        module: benchmarks/samples/storage/update.js
+
+    # # 500
+    - label: Create a Asset (500)
+      txNumber: 3000
+      rateControl:
+        type: fixed-rate
+        opts:
+          tps: 500
+      workload:
+        module: benchmarks/samples/storage/create.js
+
+    - label: Delete a Asset (500)
+      txNumber: 3000
+      rateControl:
+        type: fixed-rate
+        opts:
+          tps: 500
+      workload:
+        module: benchmarks/samples/storage/delete.js
+
+    - label: Update a Asset (500)
+      txNumber: 3000
+      rateControl:
+        type: fixed-rate
+        opts:
+          tps: 500
+      workload:
+        module: benchmarks/samples/storage/update.js
+
+    # # 700
+    # - label: Create a Asset (700)
+    #   txNumber: 3000
+    #   rateControl:
+    #     type: fixed-rate
+    #     opts:
+    #       tps: 700
+    #   workload:
+    #     module: benchmarks/samples/storage/create.js
+
+    # - label: Delete a Asset (700)
+    #   txNumber: 3000
+    #   rateControl:
+    #     type: fixed-rate
+    #     opts:
+    #       tps: 700
+    #   workload:
+    #     module: benchmarks/samples/storage/delete.js
+
+    # - label: Query a Asset (700)
+    #   txNumber: 3000
+    #   rateControl:
+    #     type: fixed-rate
+    #     opts:
+    #       tps: 700
+    #   workload:
+    #     module: benchmarks/samples/storage/query.js
+
+    # - label: Update a Asset (700)
+    #   txNumber: 3000
+    #   rateControl:
+    #     type: fixed-rate
+    #     opts:
+    #       tps: 700
+    #   workload:
+    #     module: benchmarks/samples/storage/update.js
+
+    # # 900
+    # - label: Create a Asset (900)
+    #   txNumber: 3000
+    #   rateControl:
+    #     type: fixed-rate
+    #     opts:
+    #       tps: 900
+    #   workload:
+    #     module: benchmarks/samples/storage/create.js
+
+    # - label: Delete a Asset (900)
+    #   txNumber: 3000
+    #   rateControl:
+    #     type: fixed-rate
+    #     opts:
+    #       tps: 900
+    #   workload:
+    #     module: benchmarks/samples/storage/delete.js
+
+    # - label: Query a Asset (900)
+    #   txNumber: 3000
+    #   rateControl:
+    #     type: fixed-rate
+    #     opts:
+    #       tps: 900
+    #   workload:
+    #     module: benchmarks/samples/storage/query.js
+
+    # - label: Update a Asset (900)
+    #   txNumber: 3000
+    #   rateControl:
+    #     type: fixed-rate
+    #     opts:
+    #       tps: 900
+    #   workload:
+    #     module: benchmarks/samples/storage/update.js
+
+    # # 1100
+    # - label: Create a Asset (1100)
+    #   txNumber: 3000
+    #   rateControl:
+    #     type: fixed-rate
+    #     opts:
+    #       tps: 1100
+    #   workload:
+    #     module: benchmarks/samples/storage/create.js
+
+    # - label: Delete a Asset (1100)
+    #   txNumber: 3000
+    #   rateControl:
+    #     type: fixed-rate
+    #     opts:
+    #       tps: 1100
+    #   workload:
+    #     module: benchmarks/samples/storage/delete.js
+
+    # - label: Query a Asset (1100)
+    #   txNumber: 3000
+    #   rateControl:
+    #     type: fixed-rate
+    #     opts:
+    #       tps: 1100
+    #   workload:
+    #     module: benchmarks/samples/storage/query.js
+
+    # - label: Update a Asset (1100)
+    #   txNumber: 3000
+    #   rateControl:
+    #     type: fixed-rate
+    #     opts:
+    #       tps: 1100
+    #   workload:
+    #     module: benchmarks/samples/storage/update.js
+
+    # # 1300
+    # - label: Create a Asset (1300)
+    #   txNumber: 3000
+    #   rateControl:
+    #     type: fixed-rate
+    #     opts:
+    #       tps: 1300
+    #   workload:
+    #     module: benchmarks/samples/storage/create.js
+
+    # - label: Delete a Asset (1300)
+    #   txNumber: 3000
+    #   rateControl:
+    #     type: fixed-rate
+    #     opts:
+    #       tps: 1300
+    #   workload:
+    #     module: benchmarks/samples/storage/delete.js
+
+    # - label: Query a Asset (1300)
+    #   txNumber: 3000
+    #   rateControl:
+    #     type: fixed-rate
+    #     opts:
+    #       tps: 1300
+    #   workload:
+    #     module: benchmarks/samples/storage/query.js
+
+    # - label: Update a Asset (1300)
+    #   txNumber: 3000
+    #   rateControl:
+    #     type: fixed-rate
+    #     opts:
+    #       tps: 1300
+    #   workload:
+    #     module: benchmarks/samples/storage/update.js
+
+    # 1500
+    # - label: Create a Asset (1500)
+    #   txNumber: 2000
+    #   rateControl:
+    #     type: fixed-rate
+    #     opts:
+    #       tps: 300
+    #   workload:
+    #     module: benchmarks/samples/storage/create.js
+
+    # - label: Delete a Asset (1500)
+    #   txNumber: 3000
+    #   rateControl:
+    #     type: fixed-rate
+    #     opts:
+    #       tps: 1500
+    #   workload:
+    #     module: benchmarks/samples/storage/delete.js
+
+    # - label: Query a Asset (1500)
+    #   txNumber: 3000
+    #   rateControl:
+    #     type: fixed-rate
+    #     opts:
+    #       tps: 1500
+    #   workload:
+    #     module: benchmarks/samples/storage/query.js
+
+    # - label: Update a Asset (1500)
+    #   txNumber: 3000
+    #   rateControl:
+    #     type: fixed-rate
+    #     opts:
+    #       tps: 1500
+    #   workload:
+    #     module: benchmarks/samples/storage/update.js
