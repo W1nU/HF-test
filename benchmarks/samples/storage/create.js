@@ -96,17 +96,9 @@ class CreateWorkload extends WorkloadModuleBase {
     this.txIndex++;
     let id = this.makeid(30);
 
-    const org1Peers = [
-      "peer0.org1.example.com",
-      "peer1.org1.example.com",
-      "peer2.org1.example.com",
-    ];
+    const org1Peers = ["peer0.org1.example.com", "peer1.org1.example.com"];
 
-    const org2Peers = [
-      "peer0.org2.example.com",
-      "peer1.org2.example.com",
-      "peer2.org2.example.com",
-    ];
+    const org2Peers = ["peer0.org2.example.com", "peer1.org2.example.com"];
 
     // select a peer ramdomly from org1 and org2 and count up the number of txs
     const org1Peer = org1Peers[0];
