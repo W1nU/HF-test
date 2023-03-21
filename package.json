@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "@hyperledger/caliper-cli": "^0.5.0",
+    "bluebird": "^3.7.2",
+    "fabric-network": "^2.2.12",
+    "p-queue": "^7.3.4"
+  }
+}
